@@ -1,0 +1,7 @@
+{
+  "BANCOLOMBIA_QR": {
+      "type": "BANCOLOMBIA_QR",
+      "payment_description": "Pago a Tienda Wompi",
+      "sandbox_status": "APPROVED"
+  }
+}

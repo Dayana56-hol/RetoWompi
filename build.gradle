@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'co.com.Wompi'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    karateVersion = "1.0.1"
+    cucumberReportVersion = "5.6.1"
+
+}
+
+
+dependencies {
+    testImplementation "com.intuit.karate:karate-junit5:${karateVersion}"
+    testImplementation "net.masterthought:cucumber-reporting:${cucumberReportVersion}"
+}
+
+test {
+    useJUnitPlatform()
+}

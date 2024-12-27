@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/resources\/karate\/transactions\/transactions[1.1:40]","start":1735239389119,"end":1735239393262,"title":"src\/test\/resources\/karate\/transactions\/transactions[1.1:40] 13:56:29.119-13:56:33.262 Transaccion exitosa por Bancolombia QR"},{"id":2,"group":1,"content":"src\/test\/resources\/karate\/transactions\/transactions[1.2:41]","start":1735239393268,"end":1735239394402,"title":"src\/test\/resources\/karate\/transactions\/transactions[1.2:41] 13:56:33.268-13:56:34.402 Transaccion exitosa por Bancolombia QR"},{"id":3,"group":1,"content":"src\/test\/resources\/karate\/transactions\/transactions[5.1:123]","start":1735239394409,"end":1735239395561,"title":"src\/test\/resources\/karate\/transactions\/transactions[5.1:123] 13:56:34.409-13:56:35.561 Transaccion exitosa por Bancolombia QR","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

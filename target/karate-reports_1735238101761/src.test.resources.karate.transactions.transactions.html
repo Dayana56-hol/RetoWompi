@@ -1,0 +1,2483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.resources.karate.transactions.transactions</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-12-26 01:34:02 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:39]"><span>[1.1:39]</span> <span>Transaccion exitosa por Bancolombia QR</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.2:40]"><span>[1.2:40]</span> <span>Transaccion exitosa por Bancolombia QR</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/resources/karate/transactions/transactions.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Realizar una transaccion</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:39]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:39]</span>
+                <span class="scenario-name">Transaccion exitosa por Bancolombia QR</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1908</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:39]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url api.urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keys = read(&#39;classpath:karate/common/keys.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">63</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyRequest = read(&#39;classpath:karate/transactions/data/transactions_body.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def paymentMethod = read(&#39;classpath:karate/transactions/data/payment_method.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def customerData = read(&#39;classpath:karate/transactions/data/customer_data.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def publicKey = keys.public_key</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def integrityKey = keys.integrity_key</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = &#39;Bearer &#39; + publicKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionPath = path.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokens = call read(&#39;classpath:karate/merchants/merchants.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">965</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.13.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.merchants.merchants</div>
+      </div>
+      <div class="time-cell passed">952</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url api.urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keys = read(&#39;classpath:karate/common/keys.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13.0.call.0.6">13:33:59.733 over-writing existing variable &#39;keys&#39; with new value: read(&#39;classpath:karate/common/keys.json&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def publicKey = keys.public_key</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13.0.call.0.7">13:33:59.734 over-writing existing variable &#39;publicKey&#39; with new value: keys.public_key
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def merchantsPath = path.merchants</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path merchantsPath, publicKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">932</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13.0.call.0.12">13:33:59.850 request:
+1 &gt; GET https://api-sandbox.co.uat.wompi.dev/v1/merchants/pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7
+1 &gt; Host: api-sandbox.co.uat.wompi.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:34:00.676 response time in milliseconds: 821
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 26 Dec 2024 18:34:01 GMT
+1 &lt; apigw-requestid: DaYwFheGoAMEJfw=
+1 &lt; vary: Origin
+1 &lt; vary: accept-encoding
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 d7db6b9cdf796f6ea0cdbe5b3a75c84a.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: MIA3-C3
+1 &lt; X-Amz-Cf-Id: 0fN1VptsJ6_oJqtFQ1j1d8Wq6-qXcb8iysQTRhVNiF1vQr65-h9yfw==
+{&quot;data&quot;:{&quot;public_key&quot;:&quot;pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7&quot;,&quot;legal_id&quot;:&quot;1069879849&quot;,&quot;contact_name&quot;:&quot;Alejandra Pruebas Sandbox UAT&quot;,&quot;logo_url&quot;:null,&quot;active&quot;:true,&quot;accepted_payment_methods&quot;:[&quot;NEQUI&quot;,&quot;PSE&quot;,&quot;BANCOLOMBIA_TRANSFER&quot;,&quot;CARD&quot;,&quot;BANCOLOMBIA_COLLECT&quot;,&quot;BANCOLOMBIA_QR&quot;,&quot;DAVIPLATA&quot;,&quot;BANCOLOMBIA_BNPL&quot;,&quot;SU_PLUS&quot;],&quot;fraud_javascript_key&quot;:null,&quot;payment_methods&quot;:[{&quot;name&quot;:&quot;BANCOLOMBIA_BNPL&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;BANCOLOMBIA_BNPL_SANDBOX&quot;}]},{&quot;name&quot;:&quot;BANCOLOMBIA_COLLECT&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;BANCOLOMBIA_COLLECT_SANDBOX&quot;}]},{&quot;name&quot;:&quot;BANCOLOMBIA_QR&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;BANCOLOMBIA_QR_SANDBOX&quot;}]},{&quot;name&quot;:&quot;BANCOLOMBIA_TRANSFER&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;BANCOLOMBIA_TRANSFER_SANDBOX&quot;}]},{&quot;name&quot;:&quot;CARD&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;CARD_SANDBOX&quot;}]},{&quot;name&quot;:&quot;DAVIPLATA&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;DAVIPLATA_SANDBOX&quot;}]},{&quot;name&quot;:&quot;NEQUI&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;NEQUI_SANDBOX&quot;}]},{&quot;name&quot;:&quot;PSE&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;PSE_SANDBOX&quot;}]},{&quot;name&quot;:&quot;SU_PLUS&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;SU_PLUS_SANDBOX&quot;}]}],&quot;fraud_groups&quot;:[],&quot;name&quot;:&quot;Alejandra Pruebas Sandbox UAT&quot;,&quot;phone_number&quot;:&quot;+573000000000&quot;,&quot;id&quot;:5113,&quot;legal_name&quot;:&quot;Alejandra Pruebas Sandbox UAT&quot;,&quot;presigned_personal_data_auth&quot;:{&quot;acceptance_token&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6Mzc1LCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvYXV0b3JpemFjaW9uLWFkbWluaXN0cmFjaW9uLWRhdG9zLXBlcnNvbmFsZXMucGRmIiwiZmlsZV9oYXNoIjoiOTVkYzcwN2M0M2UxYmViMDAwMDUyZDNkNWJhZThhMDAiLCJqaXQiOiIxNzM1MjM4MDQxLTg5MjQ3IiwiZW1haWwiOiIifQ.1xSdSantF3cx3OG_MzlmxR0PGOEPLIdA8T4lsmrcqKY&quot;,&quot;permalink&quot;:&quot;https:\/\/wompi.com\/assets\/downloadble\/autorizacion-administracion-datos-personales.pdf&quot;,&quot;type&quot;:&quot;PERSONAL_DATA_AUTH&quot;},&quot;presigned_acceptance&quot;:{&quot;acceptance_token&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6MjQzLCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvcmVnbGFtZW50by1Vc3Vhcmlvcy1Db2xvbWJpYS5wZGYiLCJmaWxlX2hhc2giOiJkMWVkMDI3NjhlNDEzZWEyMzFmNzAwMjc0N2Y0N2FhOSIsImppdCI6IjE3MzUyMzgwNDEtNTQ0NzIiLCJlbWFpbCI6IiIsImV4cCI6MTczNTI0MTY0MX0.WPSlSoZjqbVizsPTOqkDFef57KAcWliBO76kuICGVR8&quot;,&quot;permalink&quot;:&quot;https:\/\/wompi.com\/assets\/downloadble\/reglamento-Usuarios-Colombia.pdf&quot;,&quot;type&quot;:&quot;END_USER_POLICY&quot;},&quot;email&quot;:&quot;pruebasensandbox@yopmail.com&quot;,&quot;accepted_currencies&quot;:[&quot;COP&quot;],&quot;legal_id_type&quot;:&quot;CC&quot;},&quot;meta&quot;:{}}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data.presigned_acceptance.acceptance_token == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.13.0.call">
+    <div class="step-container" id="1.13.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data.presigned_personal_data_auth.acceptance_token == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1.1:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def createSignature = Java.type(&#39;karate.utils.Generate&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def reference = createSignature.generarCodigo()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def signature = createSignature.generateSHA256Hash(reference,150000,&#39;COP&#39;,integrityKey)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.amount_in_cents = 150000</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.currency = &#39;COP&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.reference = reference</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.signature = signature</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.customer_data = customerData.customer_data</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.payment_method = paymentMethod.BANCOLOMBIA_QR</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.acceptance_token = tokens.response.data.presigned_acceptance.acceptance_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.accept_personal_auth = tokens.response.data.presigned_personal_data_auth.acceptance_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path transactionPath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyRequest</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">848</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.30">13:34:00.748 request:
+1 &gt; POST https://api-sandbox.co.uat.wompi.dev/v1/transactions
+1 &gt; Authorization: Bearer pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1163
+1 &gt; Host: api-sandbox.co.uat.wompi.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;reference&quot;:&quot;sk8-C1rQ-RJIa-vEoO&quot;,&quot;amount_in_cents&quot;:150000,&quot;signature&quot;:&quot;67be193e6953f1861f22706b29d5dbf38ddc7163ac52a42a90e85cd059d8039d&quot;,&quot;acceptance_token&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6MjQzLCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvcmVnbGFtZW50by1Vc3Vhcmlvcy1Db2xvbWJpYS5wZGYiLCJmaWxlX2hhc2giOiJkMWVkMDI3NjhlNDEzZWEyMzFmNzAwMjc0N2Y0N2FhOSIsImppdCI6IjE3MzUyMzgwNDEtNTQ0NzIiLCJlbWFpbCI6IiIsImV4cCI6MTczNTI0MTY0MX0.WPSlSoZjqbVizsPTOqkDFef57KAcWliBO76kuICGVR8&quot;,&quot;customer_email&quot;:&quot;example@wompi.co&quot;,&quot;customer_data&quot;:{&quot;legal_id&quot;:&quot;1234567890&quot;,&quot;full_name&quot;:&quot;Juan Alfonso Pérez Rodríguez&quot;,&quot;phone_number&quot;:&quot;573307654321&quot;,&quot;legal_id_type&quot;:&quot;CC&quot;},&quot;currency&quot;:&quot;COP&quot;,&quot;accept_personal_auth&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6Mzc1LCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvYXV0b3JpemFjaW9uLWFkbWluaXN0cmFjaW9uLWRhdG9zLXBlcnNvbmFsZXMucGRmIiwiZmlsZV9oYXNoIjoiOTVkYzcwN2M0M2UxYmViMDAwMDUyZDNkNWJhZThhMDAiLCJqaXQiOiIxNzM1MjM4MDQxLTg5MjQ3IiwiZW1haWwiOiIifQ.1xSdSantF3cx3OG_MzlmxR0PGOEPLIdA8T4lsmrcqKY&quot;,&quot;payment_method&quot;:{&quot;payment_description&quot;:&quot;Pago a Tienda Wompi&quot;,&quot;type&quot;:&quot;BANCOLOMBIA_QR&quot;,&quot;sandbox_status&quot;:&quot;APPROVED&quot;}}
+
+13:34:01.559 response time in milliseconds: 811
+1 &lt; 201
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 768
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 26 Dec 2024 18:34:02 GMT
+1 &lt; vary: Origin
+1 &lt; apigw-requestid: DaYwLhA3IAMEc4A=
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 72aa1f6d307a536bbaffdcdb498b124c.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: MIA3-C3
+1 &lt; X-Amz-Cf-Id: OJpjyjforEfZRpXmlsA0nrtOK5XUYNIjq5KH2l_l-vGZOPlqD1dZ6w==
+{&quot;data&quot;:{&quot;finalized_at&quot;:null,&quot;payment_method_type&quot;:&quot;BANCOLOMBIA_QR&quot;,&quot;status_message&quot;:null,&quot;bill_id&quot;:null,&quot;payment_source_id&quot;:null,&quot;payment_link_id&quot;:null,&quot;created_at&quot;:&quot;2024-12-26T18:34:02.748Z&quot;,&quot;taxes&quot;:[],&quot;tip_in_cents&quot;:null,&quot;reference&quot;:&quot;sk8-C1rQ-RJIa-vEoO&quot;,&quot;billing_data&quot;:null,&quot;amount_in_cents&quot;:150000,&quot;customer_email&quot;:&quot;example@wompi.co&quot;,&quot;customer_data&quot;:{&quot;legal_id&quot;:&quot;1234567890&quot;,&quot;full_name&quot;:&quot;Juan Alfonso Pérez Rodríguez&quot;,&quot;phone_number&quot;:&quot;573307654321&quot;,&quot;legal_id_type&quot;:&quot;CC&quot;},&quot;currency&quot;:&quot;COP&quot;,&quot;id&quot;:&quot;15113-1735238042-79872&quot;,&quot;shipping_address&quot;:null,&quot;payment_method&quot;:{&quot;payment_description&quot;:&quot;Pago a Tienda Wompi&quot;,&quot;extra&quot;:{&quot;is_three_ds&quot;:false,&quot;three_ds_auth_type&quot;:null},&quot;type&quot;:&quot;BANCOLOMBIA_QR&quot;,&quot;sandbox_status&quot;:&quot;APPROVED&quot;},&quot;redirect_url&quot;:null,&quot;status&quot;:&quot;PENDING&quot;},&quot;meta&quot;:{}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data.payment_method_type == &#39;BANCOLOMBIA_QR&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.33">
+      <div class="step-ref failed">33</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.data.amount_in_cents == &#39;150000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.33">13:34:01.562 src/test/resources/karate/transactions/transactions.feature:33
+And match response.data.amount_in_cents == &#39;150000&#39;
+match failed: EQUALS
+  $ | data types don&#39;t match (NUMBER:STRING)
+  150000
+  &#39;150000&#39;
+
+src/test/resources/karate/transactions/transactions.feature:33
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.34">
+      <div class="step-ref skipped">34</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.data.currency == &#39;&#39;COP&#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.35">
+      <div class="step-ref skipped">35</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.data.sandbox_status == &#39;APPROVED&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.36">
+      <div class="step-ref skipped">36</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.data.reference == &#39;reference&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:40]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:40]</span>
+                <span class="scenario-name">Transaccion exitosa por Bancolombia QR</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1087</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:40]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url api.urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keys = read(&#39;classpath:karate/common/keys.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyRequest = read(&#39;classpath:karate/transactions/data/transactions_body.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def paymentMethod = read(&#39;classpath:karate/transactions/data/payment_method.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def customerData = read(&#39;classpath:karate/transactions/data/customer_data.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def publicKey = keys.public_key</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def integrityKey = keys.integrity_key</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = &#39;Bearer &#39; + publicKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionPath = path.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokens = call read(&#39;classpath:karate/merchants/merchants.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">422</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="2.13.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">karate.merchants.merchants</div>
+      </div>
+      <div class="time-cell passed">414</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url api.urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keys = read(&#39;classpath:karate/common/keys.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.13.0.call.0.6">13:34:01.585 over-writing existing variable &#39;keys&#39; with new value: read(&#39;classpath:karate/common/keys.json&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def publicKey = keys.public_key</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.13.0.call.0.7">13:34:01.586 over-writing existing variable &#39;publicKey&#39; with new value: keys.public_key
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def merchantsPath = path.merchants</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path merchantsPath, publicKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">411</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.13.0.call.0.12">13:34:01.588 request:
+1 &gt; GET https://api-sandbox.co.uat.wompi.dev/v1/merchants/pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7
+1 &gt; Host: api-sandbox.co.uat.wompi.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:34:01.998 response time in milliseconds: 409
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 26 Dec 2024 18:34:03 GMT
+1 &lt; apigw-requestid: DaYwThROIAMEZTQ=
+1 &lt; vary: Origin
+1 &lt; vary: accept-encoding
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 bb707a876db211940a3cb07991cacbdc.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: MIA3-C3
+1 &lt; X-Amz-Cf-Id: A6FQbYo9nQ53inuF6OJ7qJFQ2xnvudkjR9xbXrQjkJYIi1z6cfZLXQ==
+{&quot;data&quot;:{&quot;public_key&quot;:&quot;pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7&quot;,&quot;legal_id&quot;:&quot;1069879849&quot;,&quot;contact_name&quot;:&quot;Alejandra Pruebas Sandbox UAT&quot;,&quot;logo_url&quot;:null,&quot;active&quot;:true,&quot;accepted_payment_methods&quot;:[&quot;NEQUI&quot;,&quot;PSE&quot;,&quot;BANCOLOMBIA_TRANSFER&quot;,&quot;CARD&quot;,&quot;BANCOLOMBIA_COLLECT&quot;,&quot;BANCOLOMBIA_QR&quot;,&quot;DAVIPLATA&quot;,&quot;BANCOLOMBIA_BNPL&quot;,&quot;SU_PLUS&quot;],&quot;fraud_javascript_key&quot;:null,&quot;payment_methods&quot;:[{&quot;name&quot;:&quot;BANCOLOMBIA_BNPL&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;BANCOLOMBIA_BNPL_SANDBOX&quot;}]},{&quot;name&quot;:&quot;BANCOLOMBIA_COLLECT&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;BANCOLOMBIA_COLLECT_SANDBOX&quot;}]},{&quot;name&quot;:&quot;BANCOLOMBIA_QR&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;BANCOLOMBIA_QR_SANDBOX&quot;}]},{&quot;name&quot;:&quot;BANCOLOMBIA_TRANSFER&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;BANCOLOMBIA_TRANSFER_SANDBOX&quot;}]},{&quot;name&quot;:&quot;CARD&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;CARD_SANDBOX&quot;}]},{&quot;name&quot;:&quot;DAVIPLATA&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;DAVIPLATA_SANDBOX&quot;}]},{&quot;name&quot;:&quot;NEQUI&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;NEQUI_SANDBOX&quot;}]},{&quot;name&quot;:&quot;PSE&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;PSE_SANDBOX&quot;}]},{&quot;name&quot;:&quot;SU_PLUS&quot;,&quot;payment_processors&quot;:[{&quot;name&quot;:&quot;SU_PLUS_SANDBOX&quot;}]}],&quot;fraud_groups&quot;:[],&quot;name&quot;:&quot;Alejandra Pruebas Sandbox UAT&quot;,&quot;phone_number&quot;:&quot;+573000000000&quot;,&quot;id&quot;:5113,&quot;legal_name&quot;:&quot;Alejandra Pruebas Sandbox UAT&quot;,&quot;presigned_personal_data_auth&quot;:{&quot;acceptance_token&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6Mzc1LCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvYXV0b3JpemFjaW9uLWFkbWluaXN0cmFjaW9uLWRhdG9zLXBlcnNvbmFsZXMucGRmIiwiZmlsZV9oYXNoIjoiOTVkYzcwN2M0M2UxYmViMDAwMDUyZDNkNWJhZThhMDAiLCJqaXQiOiIxNzM1MjM4MDQzLTYwODkxIiwiZW1haWwiOiIifQ.annjGMCbcN8r1--svI_YZxl0ox74XrEEDjgbaqi-iD0&quot;,&quot;permalink&quot;:&quot;https:\/\/wompi.com\/assets\/downloadble\/autorizacion-administracion-datos-personales.pdf&quot;,&quot;type&quot;:&quot;PERSONAL_DATA_AUTH&quot;},&quot;presigned_acceptance&quot;:{&quot;acceptance_token&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6MjQzLCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvcmVnbGFtZW50by1Vc3Vhcmlvcy1Db2xvbWJpYS5wZGYiLCJmaWxlX2hhc2giOiJkMWVkMDI3NjhlNDEzZWEyMzFmNzAwMjc0N2Y0N2FhOSIsImppdCI6IjE3MzUyMzgwNDMtNDgyMTYiLCJlbWFpbCI6IiIsImV4cCI6MTczNTI0MTY0M30._h6ZVqGn-6ReigvZwkpHowULD_ehbshYy_htXIVp9r4&quot;,&quot;permalink&quot;:&quot;https:\/\/wompi.com\/assets\/downloadble\/reglamento-Usuarios-Colombia.pdf&quot;,&quot;type&quot;:&quot;END_USER_POLICY&quot;},&quot;email&quot;:&quot;pruebasensandbox@yopmail.com&quot;,&quot;accepted_currencies&quot;:[&quot;COP&quot;],&quot;legal_id_type&quot;:&quot;CC&quot;},&quot;meta&quot;:{}}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data.presigned_acceptance.acceptance_token == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.13.0.call">
+    <div class="step-container" id="2.13.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data.presigned_personal_data_auth.acceptance_token == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1.2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def createSignature = Java.type(&#39;karate.utils.Generate&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def reference = createSignature.generarCodigo()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def signature = createSignature.generateSHA256Hash(reference,160000,&#39;COP&#39;,integrityKey)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.amount_in_cents = 160000</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.currency = &#39;COP&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.reference = reference</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.signature = signature</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.customer_data = customerData.customer_data</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.payment_method = paymentMethod.BANCOLOMBIA_QR</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.acceptance_token = tokens.response.data.presigned_acceptance.acceptance_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyRequest.accept_personal_auth = tokens.response.data.presigned_personal_data_auth.acceptance_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path transactionPath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyRequest</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">656</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.30">13:34:02.006 request:
+1 &gt; POST https://api-sandbox.co.uat.wompi.dev/v1/transactions
+1 &gt; Authorization: Bearer pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1163
+1 &gt; Host: api-sandbox.co.uat.wompi.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;reference&quot;:&quot;sk8-DXhK-C2NP-TAs9&quot;,&quot;amount_in_cents&quot;:160000,&quot;signature&quot;:&quot;4193d3a5608d623cef2cc371e0552bd8652d56d7041c4ab7c19898ce6afd7217&quot;,&quot;acceptance_token&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6MjQzLCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvcmVnbGFtZW50by1Vc3Vhcmlvcy1Db2xvbWJpYS5wZGYiLCJmaWxlX2hhc2giOiJkMWVkMDI3NjhlNDEzZWEyMzFmNzAwMjc0N2Y0N2FhOSIsImppdCI6IjE3MzUyMzgwNDMtNDgyMTYiLCJlbWFpbCI6IiIsImV4cCI6MTczNTI0MTY0M30._h6ZVqGn-6ReigvZwkpHowULD_ehbshYy_htXIVp9r4&quot;,&quot;customer_email&quot;:&quot;example@wompi.co&quot;,&quot;customer_data&quot;:{&quot;legal_id&quot;:&quot;1234567890&quot;,&quot;full_name&quot;:&quot;Juan Alfonso Pérez Rodríguez&quot;,&quot;phone_number&quot;:&quot;573307654321&quot;,&quot;legal_id_type&quot;:&quot;CC&quot;},&quot;currency&quot;:&quot;COP&quot;,&quot;accept_personal_auth&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6Mzc1LCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvYXV0b3JpemFjaW9uLWFkbWluaXN0cmFjaW9uLWRhdG9zLXBlcnNvbmFsZXMucGRmIiwiZmlsZV9oYXNoIjoiOTVkYzcwN2M0M2UxYmViMDAwMDUyZDNkNWJhZThhMDAiLCJqaXQiOiIxNzM1MjM4MDQzLTYwODkxIiwiZW1haWwiOiIifQ.annjGMCbcN8r1--svI_YZxl0ox74XrEEDjgbaqi-iD0&quot;,&quot;payment_method&quot;:{&quot;payment_description&quot;:&quot;Pago a Tienda Wompi&quot;,&quot;type&quot;:&quot;BANCOLOMBIA_QR&quot;,&quot;sandbox_status&quot;:&quot;APPROVED&quot;}}
+
+13:34:02.660 response time in milliseconds: 653
+1 &lt; 201
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 768
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 26 Dec 2024 18:34:03 GMT
+1 &lt; vary: Origin
+1 &lt; apigw-requestid: DaYwWjpQIAMEZzg=
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 6c9274205f681e6532f5f293414b8d2e.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: MIA3-C3
+1 &lt; X-Amz-Cf-Id: ykfNDECPaOoWd5AkuxWrhURRjg37LT1Q9RmgqN9QGtNYyOLOX0YF5w==
+{&quot;data&quot;:{&quot;finalized_at&quot;:null,&quot;payment_method_type&quot;:&quot;BANCOLOMBIA_QR&quot;,&quot;status_message&quot;:null,&quot;bill_id&quot;:null,&quot;payment_source_id&quot;:null,&quot;payment_link_id&quot;:null,&quot;created_at&quot;:&quot;2024-12-26T18:34:03.874Z&quot;,&quot;taxes&quot;:[],&quot;tip_in_cents&quot;:null,&quot;reference&quot;:&quot;sk8-DXhK-C2NP-TAs9&quot;,&quot;billing_data&quot;:null,&quot;amount_in_cents&quot;:160000,&quot;customer_email&quot;:&quot;example@wompi.co&quot;,&quot;customer_data&quot;:{&quot;legal_id&quot;:&quot;1234567890&quot;,&quot;full_name&quot;:&quot;Juan Alfonso Pérez Rodríguez&quot;,&quot;phone_number&quot;:&quot;573307654321&quot;,&quot;legal_id_type&quot;:&quot;CC&quot;},&quot;currency&quot;:&quot;COP&quot;,&quot;id&quot;:&quot;15113-1735238043-38172&quot;,&quot;shipping_address&quot;:null,&quot;payment_method&quot;:{&quot;payment_description&quot;:&quot;Pago a Tienda Wompi&quot;,&quot;extra&quot;:{&quot;is_three_ds&quot;:false,&quot;three_ds_auth_type&quot;:null},&quot;type&quot;:&quot;BANCOLOMBIA_QR&quot;,&quot;sandbox_status&quot;:&quot;APPROVED&quot;},&quot;redirect_url&quot;:null,&quot;status&quot;:&quot;PENDING&quot;},&quot;meta&quot;:{}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data.payment_method_type == &#39;BANCOLOMBIA_QR&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.33">
+      <div class="step-ref failed">33</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.data.amount_in_cents == &#39;160000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.33">13:34:02.661 src/test/resources/karate/transactions/transactions.feature:33
+And match response.data.amount_in_cents == &#39;160000&#39;
+match failed: EQUALS
+  $ | data types don&#39;t match (NUMBER:STRING)
+  160000
+  &#39;160000&#39;
+
+src/test/resources/karate/transactions/transactions.feature:33
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.34">
+      <div class="step-ref skipped">34</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.data.currency == &#39;&#39;COP&#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.35">
+      <div class="step-ref skipped">35</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.data.sandbox_status == &#39;APPROVED&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.36">
+      <div class="step-ref skipped">36</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.data.reference == &#39;reference&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
