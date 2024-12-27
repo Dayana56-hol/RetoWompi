@@ -22,7 +22,7 @@ Antes de ejecutar las pruebas, asegúrate de tener instalados los siguientes com
 1. **Clonar el repositorio:**
 
 ```bash
-   git clone https://github.com/marck431/Karate.git
+   git clone https://github.com/Dayana56-hol/RetoWompi.git
    cd Karate
 ```
 
